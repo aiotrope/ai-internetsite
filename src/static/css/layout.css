@@ -1,0 +1,237 @@
+:root {
+  --font: Atkinson Hyperlegible, sans-serif;
+  /* --font: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif; */
+  --primary-text-color: #454545;
+  --blockquote-color: #d1d1d1;
+  --codeBackground: #f1f1f1;
+  --codeBorder: #e1e1e1;
+  --hr-color: #f4f5f6;
+  --primary-links-color: cornflowerblue;
+  --steal-color: #647687;
+  --secondary-steal: #606c76;
+  --highway-blue-color: #00477e;
+  --primary-title-color: #ffff;
+  --navigation-background-color: #f4f5f6;
+  --navigation-bb-color: #d1d1d1;
+  --secondary-text-color: #606c76;
+  --tertiary-text-color: #222;
+  --button-border: #bbb;
+  --active: #778da9;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* height: 100%; */
+ 
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--teriary-text-color);
+  font-family: var(--font);
+  /* height: 100%; */
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+ background-color: #faf3e6;
+ /* background-color: #E7D8AF; */
+}
+
+
+
+blockquote {
+  border-left: 0.3rem solid var(--blockquote-color);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem;
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+code {
+  background: var(--codeBackground);
+  color: var(--primary-text-color);
+  border-radius: 0.4rem;
+  font-size: 86%;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap;
+  border: 1px solid var(--codeBorder);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 2.5rem 1.5rem;
+  white-space: pre;
+}
+
+pre {
+  overflow-y: hidden;
+  padding: 1rem 1.5rem;
+  white-space: pre-wrap;
+  color: var(--primary-title-color);
+  background-color: var(--secondary-steal);
+  font-size: 0.9em !important;
+  font-family: monospace;
+}
+
+hr {
+  border: 0;
+  border-top: 0.1rem solid var(--hr-color);
+  margin: 3rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #e5452c;
+  font-family: var(--font);
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-size: 1em;
+}
+
+form,
+blockquote,
+p,
+pre,
+table {
+  margin-bottom: 2.5rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/***** Table ****/
+
+table {
+  width: auto;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--codeBorder);
+}
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+@media (min-width: 40rem) {
+  table {
+    display: table;
+    overflow-x: initial;
+  }
+}
+
+.title {
+  font-size: 22px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 0 rgb(216, 216, 216), 1px 1px 0 rgb(177, 177, 177),
+    2px 2px 0 rgb(139, 139, 139), 3px 3px 0 rgb(100, 100, 100),
+    4px 4px 0 rgb(61, 61, 61), 5px 5px 0 rgb(22, 22, 22),
+    6px 6px 5px rgba(8, 8, 8, 0.83), 6px 6px 1px rgba(8, 8, 8, 0.5),
+    0px 0px 5px rgba(8, 8, 8, 0.2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+h1 {
+  font-size: 2.1rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+  letter-spacing: -0.1rem;
+}
+h3 {
+  font-size: 1.9rem;
+  line-height: 1.3;
+  letter-spacing: -0.1rem;
+}
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.35;
+  letter-spacing: -0.08rem;
+}
+h5 {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  letter-spacing: -0.05rem;
+}
+h6 {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+button {
+  border: 0.1rem solid var(--button-border);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 3.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 3.8rem;
+  padding: 0 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  font-family: sans-serif;
+  color: var(--steal-color);
+}
+
+button:focus,
+button:hover {
+  background-color: var(--secondary-steal);
+  border-color: var(--button-border);
+  color: #fff;
+  outline: 0;
+}
+
+.active {
+  color: #e5452c !important;
+  pointer-events: none;
+  
+}
+
