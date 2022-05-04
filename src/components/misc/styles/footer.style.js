@@ -5,11 +5,7 @@ export const Footer = styled.footer`
   padding: 0.01em 10px;
   bottom: 0;
   width: 100%;
-  height: 50px;
-
-  section {
-    margin-top: 1rem;
-  }
+  
 
   footer:before,
   footer:after {

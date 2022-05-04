@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import MenuNav from "./menuNav"
 
 import "../static/css/layout.css"
@@ -23,18 +23,22 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="grid-container">
       <MenuNav siteTitle={data.prismicAuthors.data?.name.text || `Title`} />
       <Wrapper>{children}</Wrapper>
 
-      {/*   <Footer>
-        <section>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </section>
-      </Footer> */}
-    </>
+      <Footer>
+        <nav className="nav-footer">
+          <ul className="footer-ul">
+            <li className="footer-li"><Link to="/">Index</Link></li>
+            <li className="footer-li">About</li>
+            <li className="footer-li"><Link to="/contact">Contact</Link></li>
+            <li className="footer-li"><Link to="/projects">Projects</Link></li>
+            <li className="footer-li">2019 - 2022</li>
+          </ul>
+        </nav>
+      </Footer>
+    </div>
   )
 }
 

@@ -11,15 +11,19 @@ export const HeaderContainer = styled.div`
   position: -webkit-sticky;
   top: 0;
   padding: 7px 5px;
-  z-index: 2;
-  background-color: #FFF;
+  z-index: 100;
+  background: #FFFFFF;
   border-bottom: 1px solid ${Colors.navigationBorderBottom};
   white-space: nowrap;
+  height: 3em;
+ 
+  
 
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
   }
 
   h1 {
