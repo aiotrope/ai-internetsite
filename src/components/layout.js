@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="grid-container">
+    <div className="parent">
       <MenuNav siteTitle={data.prismicAuthors.data?.name.text || `Title`} />
       <Wrapper>{children}</Wrapper>
 

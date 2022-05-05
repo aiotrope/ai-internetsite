@@ -233,7 +233,7 @@ button:hover {
 
 /* Edits */
 
-.grid-container {
+.parent {
   display: grid;
   grid-template-rows: 20px 1fr 36px;
   -webkit-column-gap: 8px;
@@ -244,11 +244,11 @@ button:hover {
   padding-bottom: 15px;
 }
 
+
+
 .nav-footer {
   display: flex;
   justify-content: space-between;
-  
-  
 }
 
 .footer-ul {
@@ -256,7 +256,6 @@ button:hover {
   margin: 0;
   padding-right: 0;
   padding-left: 0;
- 
 }
 
 .footer-li {

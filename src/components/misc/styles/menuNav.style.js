@@ -15,7 +15,7 @@ export const HeaderContainer = styled.div`
   background: #FFFFFF;
   border-bottom: 1px solid ${Colors.navigationBorderBottom};
   white-space: nowrap;
-  height: 3em;
+  height: 2.8em;
  
   
 

@@ -7,19 +7,26 @@ export const Wrapper = styled.main`
   padding: 0.01em 10px;
   overflow: hidden;
   position: relative;
- /*  min-height: 100vh; */
   width: 100%;
  
-  section {
-    margin-top: 3rem;
+ section {
+    margin-top: 6rem;
   }
-
+ 
   main:before,
   main:after {
     content: "";
     display: table;
     clear: both;
-  } 
+  }
+
+  @media ${Device.tablet} {
+    section {
+      margin-top: 9rem;
+    }
+  }
+  
+  
 
   @media ${Device.tabletM} {
     margin: 0 auto;
@@ -34,6 +41,10 @@ export const Wrapper = styled.main`
   @media ${Device.laptop} {
     width: 72%;
     padding-right: 30px;
+
+    section {
+      margin-top: 10rem;
+    }
   }
 
   @media ${Device.laptopL} {
