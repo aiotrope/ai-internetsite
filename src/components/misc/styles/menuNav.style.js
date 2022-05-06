@@ -30,7 +30,7 @@ export const HeaderContainer = styled.div`
     margin-bottom: 0;
     padding-bottom: 0;
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 700;
   }
 
   ul {
@@ -39,6 +39,7 @@ export const HeaderContainer = styled.div`
     margin: 0;
     padding-right: 15px;
     padding-left: 0;
+    
   }
   li a {
     display: inline-block;
@@ -48,7 +49,7 @@ export const HeaderContainer = styled.div`
     padding: 8px 0px 4px 11px;
   }
 
-  @media ${Device.mobileM} {
+  @media ${Device.mobileL} {
     h1 {
       font-size: 1.2em;
     }

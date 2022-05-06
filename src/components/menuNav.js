@@ -26,6 +26,7 @@ const MenuNav = ({ siteTitle }) => {
         <h1>
           <Link
             to="/"
+            
             style={{
               color: `#647687`,
               textDecoration: `none`,

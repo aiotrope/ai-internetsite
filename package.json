@@ -15,6 +15,7 @@
     "gatsby-plugin-manifest": "^4.12.1",
     "gatsby-plugin-offline": "^5.12.1",
     "gatsby-plugin-react-helmet": "^5.12.1",
+    "gatsby-plugin-sass": "^5.13.0",
     "gatsby-plugin-sharp": "^4.12.1",
     "gatsby-plugin-styled-components": "^5.12.1",
     "gatsby-source-filesystem": "^4.12.1",
@@ -25,6 +26,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "sass": "^1.51.0",
     "styled-components": "^5.3.5",
     "universal-cookie": "^4.0.4",
     "windups": "^1.2.1"

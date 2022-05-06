@@ -1,24 +1,4 @@
-:root {
-  --font: Atkinson Hyperlegible, sans-serif;
-  /* --font: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif; */
-  --primary-text-color: #454545;
-  --blockquote-color: #d1d1d1;
-  --codeBackground: #f1f1f1;
-  --codeBorder: #e1e1e1;
-  --hr-color: #f4f5f6;
-  --primary-links-color: cornflowerblue;
-  --steal-color: #647687;
-  --secondary-steal: #606c76;
-  --highway-blue-color: #00477e;
-  --primary-title-color: #ffff;
-  --navigation-background-color: #f4f5f6;
-  --navigation-bb-color: #d1d1d1;
-  --secondary-text-color: #606c76;
-  --tertiary-text-color: #222;
-  --button-border: #bbb;
-  --active: #778da9;
-  --quaternary-text-color: #0d2c40;
-}
+@import "variables";
 
 *,
 *:after,
@@ -34,21 +14,20 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--tertiary-text-color);
-  font-family: var(--font);
+  color: $tertiary-text-color;
+  font-family: $font;
   font-size: 1.8em;
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  /* background-color: #faf3e6; */
-  /*  background-color: #E7D8AF; */
-  /* background-color: #f6efe5; */
+  background: $body-background3;
+
 }
 
 blockquote {
-  border-left: 0.3rem solid var(--blockquote-color);
+  border-left: 0.3rem solid $blockquote-color;
   margin-left: 0;
   margin-right: 0;
   padding: 1rem 1.5rem;
@@ -59,14 +38,14 @@ blockquote *:last-child {
 }
 
 code {
-  background: var(--codeBackground);
-  color: var(--primary-text-color);
+  background: $codeBackground;
+  color: $primary-text-color;
   border-radius: 0.4rem;
   font-size: 86%;
   margin: 0 0.2rem;
   padding: 0.2rem 0.5rem;
   white-space: nowrap;
-  border: 1px solid var(--codeBorder);
+  border: 1px solid $codeBorder;
 }
 
 pre > code {
@@ -80,22 +59,22 @@ pre {
   overflow-y: hidden;
   padding: 1rem 1.5rem;
   white-space: pre-wrap;
-  color: var(--primary-title-color);
-  background-color: var(--secondary-steal);
+  color: $primary-title-color;
+  background-color: $secondary-steal;
   font-size: 0.9em !important;
   font-family: monospace;
 }
 
 hr {
   border: 0;
-  border-top: 0.1rem solid var(--hr-color);
+  border-top: 0.1rem solid $hr-color;
   margin: 3rem 0;
 }
 
 a {
   text-decoration: none;
   color: #e5452c;
-  font-family: var(--font);
+  font-family: $font;
 }
 
 code,
@@ -127,7 +106,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid var(--codeBorder);
+  border-bottom: 1px solid $codeBorder;
 }
 th:first-child,
 td:first-child {
@@ -145,17 +124,7 @@ td:last-child {
   }
 }
 
-.title {
-  font-size: 22px;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-shadow: 0px 0px 0 rgb(216, 216, 216), 1px 1px 0 rgb(177, 177, 177),
-    2px 2px 0 rgb(139, 139, 139), 3px 3px 0 rgb(100, 100, 100),
-    4px 4px 0 rgb(61, 61, 61), 5px 5px 0 rgb(22, 22, 22),
-    6px 6px 5px rgba(8, 8, 8, 0.83), 6px 6px 1px rgba(8, 8, 8, 0.5),
-    0px 0px 5px rgba(8, 8, 8, 0.2);
-}
+
 
 h1,
 h2,
@@ -203,7 +172,7 @@ h6 {
 }
 
 button {
-  border: 0.1rem solid var(--button-border);
+  border: 0.1rem solid $button-border;
   border-radius: 0.4rem;
   cursor: pointer;
   display: inline-block;
@@ -219,13 +188,13 @@ button {
   white-space: nowrap;
   background-color: transparent;
   font-family: sans-serif;
-  color: var(--steal-color);
+  color: $steal-color;
 }
 
 button:focus,
 button:hover {
-  background-color: var(--secondary-steal);
-  border-color: var(--button-border);
+  background-color: $secondary-steal;
+  border-color: $button-border;
   color: #fff;
   outline: 0;
 }
@@ -273,4 +242,16 @@ button:hover {
   .footer-li {
     font-size: 0.9em;
   }
+}
+
+.title {
+    font-size: 22px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 0 rgb(216, 216, 216), 1px 1px 0 rgb(177, 177, 177),
+      2px 2px 0 rgb(139, 139, 139), 3px 3px 0 rgb(100, 100, 100),
+      4px 4px 0 rgb(61, 61, 61), 5px 5px 0 rgb(22, 22, 22),
+      6px 6px 5px rgba(8, 8, 8, 0.83), 6px 6px 1px rgba(8, 8, 8, 0.5),
+      0px 0px 5px rgba(8, 8, 8, 0.2);
 }

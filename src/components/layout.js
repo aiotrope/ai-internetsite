@@ -3,7 +3,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import MenuNav from "./menuNav"
 
-import "../static/css/layout.css"
+import "../static/scss/layout.scss"
+import { Parent } from "./misc/styles/parent.style"
 import { Wrapper } from "./misc/styles/mainWrapper.style"
 import { Footer } from "./misc/styles/footer.style"
 
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="parent">
+    <Parent>
       <MenuNav siteTitle={data.prismicAuthors.data?.name.text || `Title`} />
       <Wrapper>{children}</Wrapper>
 
@@ -38,7 +39,7 @@ const Layout = ({ children }) => {
           </ul>
         </nav>
       </Footer>
-    </div>
+    </Parent>
   )
 }
 
