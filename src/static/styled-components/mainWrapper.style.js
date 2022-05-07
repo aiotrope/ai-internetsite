@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Device } from "../../../static/js/constants"
+import { Device } from "../js/constants"
 
 
 

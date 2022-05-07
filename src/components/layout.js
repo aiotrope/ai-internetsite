@@ -4,9 +4,9 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import MenuNav from "./menuNav"
 
 import "../static/scss/layout.scss"
-import { Parent } from "./misc/styles/parent.style"
-import { Wrapper } from "./misc/styles/mainWrapper.style"
-import { Footer } from "./misc/styles/footer.style"
+import { Parent } from "../static/styled-components/parent.style"
+import { Wrapper } from "../static/styled-components/mainWrapper.style"
+import { Footer } from "../static/styled-components/footer.style"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

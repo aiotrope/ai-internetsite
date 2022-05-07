@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { graphql, Link, useStaticQuery } from "gatsby"
 
-import { HeaderContainer } from "./misc/styles/menuNav.style"
+import { HeaderContainer } from "../static/styled-components/menuNav.style"
 
 const MenuNav = ({ siteTitle }) => {
   const _result = useStaticQuery(graphql`

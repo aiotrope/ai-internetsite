@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Device, Colors, Fonts } from "../../../static/js/constants"
+import { Device, Colors, Fonts } from "../js/constants"
 
 export const HeaderContainer = styled.div`
   display: flex;
