@@ -41,35 +41,10 @@ const Blog = props => {
         <section key={props.data.prismicBlogs.uid}>
           <PrismicRichText
             field={props.data.prismicBlogs.data.title.richText}
-            components={{
-              heading1: ({ children }) => (
-                <WindupChildren>
-                  <h1>{children}</h1>
-                </WindupChildren>
-              ),
-            }}
           />
 
           <PrismicRichText
             field={props.data.prismicBlogs.data.content.richText}
-            components={{
-              heading2: ({ children }) => (
-                <WindupChildren>
-                  <h2>{children}</h2>
-                </WindupChildren>
-              ),
-              paragraph: ({ children }) => (
-                <WindupChildren>
-                  <p>{children}</p>
-                </WindupChildren>
-              ),
-
-              preformatted: ({ children }) => (
-                <WindupChildren>
-                  <pre>{children}</pre>
-                </WindupChildren>
-              ),
-            }}
           />
         </section>
       </Layout>
